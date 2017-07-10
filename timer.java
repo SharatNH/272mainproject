@@ -102,14 +102,14 @@ class checkdb extends TimerTask{
 		{
 			System.out.println("messaged will be called " + count2);
 
-			final String username = "sjsu.project.ms@gmail.com";
-			final String password = "abcxyz123$";
+			final String username = "@gmail.com"; 	//main email id 
+			final String password = "";	//password for the account
 
 			Properties props = new Properties();
 			props.put("mail.smtp.auth", "true");
 			props.put("mail.smtp.starttls.enable", "true");
 			props.put("mail.smtp.host", "smtp.gmail.com");
-			props.put("mail.smtp.port", "587");
+			props.put("mail.smtp.port", "587");		//mention domian incase of outlook n other services
 
 			Session session = Session.getInstance(props,
 					new javax.mail.Authenticator() {
